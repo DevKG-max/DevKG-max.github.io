@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+.heart-container {
+    position: relative;
+    animation: heartbeat 1.5s infinite;
+    width: 50%; /* Ajustez la largeur selon vos préférences */
+}
+
+.heart {
+    width: 100%;
+    padding-bottom: 85%; /* Maintient le rapport hauteur/largeur du cœur */
+    background: url('heart.png') no-repeat center;
+    background-size: contain;
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(0.8);
+    }
+    20% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(0.8);
+    }
+    60% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
